@@ -229,8 +229,21 @@ textarea{
 }
 
 .footer {
-    height: 200px;
     width: 100%;
+    font-family: "Love Ya Like A Sister", serif;
+    color: white;
+    border: solid green;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 30px;
+    font-size: 200%;
+}
+
+.footer strong{
+    font-weight: bold;
+    font-size: 250%;
+    text-decoration: underline;
 }
 
 @-webkit-keyframes fade {
