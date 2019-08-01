@@ -4,11 +4,11 @@
     box-sizing: border-box
 }
 
-body{
+body {
     background-color: black;
 }
 
-.header{
+.header {
     text-align: center;
     color: blue;
     padding: 30px;
@@ -80,7 +80,7 @@ body{
     background-color: #717171;
 }
 
-/* Fading animation */
+/* Fading animation  */
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -91,67 +91,107 @@ body{
 #tabs {
     margin-right: auto;
     margin-left: auto;
-    height:50px;
+    height: 50px;
     width: 50%;
     background: black;
     padding-left: 40px;
-    padding-top:45px;
+    padding-top: 45px;
 }
+
 #tabs li {
     float: left;
-    list-style:none;
-    border-top:1px solid #ccc;
-    border-left:1px solid #ccc;
-    border-right:1px solid #ccc;
-    margin-right:5px;
-    border-top-left-radius:3px;
-    border-top-right-radius:3px;
+    list-style: none;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    margin-right: 5px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
     -moz-box-shadow: 0 -2px 2px #dadada;
-    -webkit-box-shadow:  0 -2px 2px #dadada;
+    -webkit-box-shadow: 0 -2px 2px #dadada;
     box-shadow: 0 -2px 2px #dadada;
 }
+
 #tabs li a {
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:13px;
-    font-weight:bold;
-    color:#000000;
-    padding:7px 14px 6px 12px;
-    display:block;
-    background:#FFFFFF;
-    border-top-left-radius:3px;
-    border-top-right-radius:3px;
-    text-decoration:none;
+    font-family: "Love Ya Like A Sister", serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #000000;
+    padding: 7px 14px 6px 12px;
+    display: block;
+    background: #FFFFFF;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    text-decoration: none;
     background: -moz-linear-gradient(top, #ebebeb, white 10%);
     background: -webkit-gradient(linear, 0 0, 0 10%, from(#ebebeb), to(white));
     border-top: 1px solid white;
-    text-shadow:-1px -1px 0 #fff;
-    outline:none;
+    text-shadow: -1px -1px 0 #fff;
+    outline: none;
 }
 
-#tabs li a.inactive{
-    padding-top:5px;
-    padding-bottom:5px;
-    color:#666666;
+#tabs li a.inactive {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #666666;
     background: -moz-linear-gradient(top, #dedede, white 75%);
     background: -webkit-gradient(linear, 0 0, 0 75%, from(#dedede), to(white));
     border-top: 1px solid white;
 }
+
 #tabs li a:hover, #tabs li a.inactive:hover {
     border-top: 1px solid #dedede;
-    color:#000000;
+    color: #000000;
 }
 
-.container{
+.container {
     margin-right: 25%;
     margin-left: 25%;
     width: 50%;
-    clear:both;
-    padding:10px 0;
-    background-color:#fff;
+    clear: both;
+    padding: 20px 0;
+    background-color: #fff;
     text-align: center;
+    font-family: "Love Ya Like A Sister", serif;
+    font-size: 160%;
+    background-color: hotpink;
 }
 
-.footer{
+.container h2 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.logos {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.logos img {
+    height: 50px;
+    margin-left: 10px;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 300px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 300px;
+    width: 600px;
+}
+
+.footer {
     height: 200px;
     width: 100%;
 }
