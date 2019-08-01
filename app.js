@@ -68,3 +68,10 @@ if($(this).hasClass('inactive')){ //this is the start of our condition
 
 });
 //------------------image arraow keys-------------------------//
+
+
+
+
+
+
+
