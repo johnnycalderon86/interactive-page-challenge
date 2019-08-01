@@ -42,5 +42,11 @@ $(t).fadeIn('slow');
 return false;
 
 })
+if($(this).hasClass('inactive')){ //this is the start of our condition
+    $('#tabs li a').addClass('inactive');
+    $(this).removeClass('inactive');
+    $('.container').hide();
+    $(t).fadeIn('slow');
+}
 
 });
