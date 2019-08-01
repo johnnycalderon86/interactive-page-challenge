@@ -100,47 +100,35 @@ body {
 
 #tabs li {
     float: left;
+    font-size: 16px;
     list-style: none;
-    border-top: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
+    border-top: 1px solid blue;
+    border-left: 1px solid blue;
+    border-right: 1px solid blue;
     margin-right: 5px;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    -moz-box-shadow: 0 -2px 2px #dadada;
-    -webkit-box-shadow: 0 -2px 2px #dadada;
-    box-shadow: 0 -2px 2px #dadada;
 }
 
 #tabs li a {
     font-family: "Love Ya Like A Sister", serif;
-    font-size: 13px;
+    color: blue;
+    font-size: 20px;
     font-weight: bold;
-    color: #000000;
     padding: 7px 14px 6px 12px;
     display: block;
-    background: #FFFFFF;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
     text-decoration: none;
-    background: -moz-linear-gradient(top, #ebebeb, white 10%);
-    background: -webkit-gradient(linear, 0 0, 0 10%, from(#ebebeb), to(white));
-    border-top: 1px solid white;
-    text-shadow: -1px -1px 0 #fff;
+    background: dodgerblue;
+    border-top: 1px solid dodgerblue;
     outline: none;
 }
 
 #tabs li a.inactive {
     padding-top: 5px;
     padding-bottom: 5px;
-    color: #666666;
-    background: -moz-linear-gradient(top, #dedede, white 75%);
-    background: -webkit-gradient(linear, 0 0, 0 75%, from(#dedede), to(white));
-    border-top: 1px solid white;
+    color: blue;
+    background: cadetblue;
 }
 
 #tabs li a:hover, #tabs li a.inactive:hover {
-    border-top: 1px solid #dedede;
     color: #000000;
 }
 
@@ -150,11 +138,11 @@ body {
     width: 50%;
     clear: both;
     padding: 20px 0;
-    background-color: #fff;
     text-align: center;
     font-family: "Love Ya Like A Sister", serif;
     font-size: 160%;
     background-color: hotpink;
+    border-top: 2px dodgerblue;
 }
 
 .container h2 {
@@ -184,11 +172,53 @@ body {
     border: 1px solid black;
 }
 
-.gmap_canvas {
-    overflow: hidden;
-    background: none !important;
-    height: 300px;
-    width: 600px;
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+.column img{
+    border: 1px solid black;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
 }
 
 .footer {
