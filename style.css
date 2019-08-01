@@ -18,7 +18,7 @@ body {
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
+    max-width: 900px;
     position: relative;
     margin: auto;
 }
@@ -176,10 +176,13 @@ body {
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     margin-top: 6px;
     margin-bottom: 16px;
-    resize: vertical;
+}
+
+textarea{
+    height: 300px;
 }
 
 input[type=submit] {
@@ -211,6 +214,10 @@ input[type=submit]:hover {
     content: "";
     display: table;
     clear: both;
+}
+
+textarea{
+    resize: none;
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
