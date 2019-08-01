@@ -207,6 +207,7 @@ input[type=submit]:hover {
 
 .column img{
     border: 1px solid black;
+    width: 100%;
 }
 
 /* Clear floats after the columns */
